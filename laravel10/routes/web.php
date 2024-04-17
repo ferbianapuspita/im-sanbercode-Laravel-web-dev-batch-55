@@ -20,3 +20,11 @@ Route::get('/', [DashboardController::class, 'utama']);
 Route::get('/register', [DashboardController::class, 'daftar']);
 
 Route::post('/welcome', [DashboardController::class, 'welcome']);
+
+Route::get('/data-table', function(){
+    return view('page.data-table');
+});
+
+Route::get('/table', function(){
+    return view('page.table');
+});
