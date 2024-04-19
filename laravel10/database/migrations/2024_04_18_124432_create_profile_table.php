@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('umur');
             $table->text('bio');
             $table->text('alamat');
-            $table-> $table->unsignedBigInteger('users_id');
+            $table->unsignedBigInteger('users_id');
  
             $table->foreign('users_id')->references('id')->on('users');
             $table->timestamps();
